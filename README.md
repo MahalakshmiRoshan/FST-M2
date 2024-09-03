@@ -1,1 +1,2 @@
-# FST-M2
+# FST_M2
+Full Stack Tester

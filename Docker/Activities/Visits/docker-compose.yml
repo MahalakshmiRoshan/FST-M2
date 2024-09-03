@@ -1,0 +1,9 @@
+services:
+    redis-server:
+        image: 'redis'
+    node-app:
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+            - "8081:8081"
