@@ -9,7 +9,7 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Activity8">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -20,10 +20,10 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.FirefoxDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfig" testname="jp@gc - Firefox Driver Config" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.FirefoxDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfig" testname="jp@gc - Firefox Driver Config">
           <boolProp name="WebDriverConfig.acceptinsecurecerts">false</boolProp>
           <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
-          <stringProp name="WebDriverConfig.driver_path">C:\Users\003A1S744\Downloads\geckodriver-v0.34.0-win32\geckodriver.exe</stringProp>
+          <stringProp name="WebDriverConfig.driver_path">C:/Users/003JDL744/Downloads/geckodriver-v0.34.0-win-aarch64/geckodriver.exe</stringProp>
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
           <boolProp name="WebDriverConfig.headless">false</boolProp>
           <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
@@ -46,7 +46,7 @@
           <stringProp name="WebDriverConfig.custom_capabilites"></stringProp>
         </com.googlecode.jmeter.plugins.webdriver.config.FirefoxDriverConfig>
         <hashTree/>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc - WebDriver Sampler" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc - WebDriver Sampler">
           <stringProp name="WebDriverSampler.script">// Import statements
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
@@ -56,7 +56,7 @@ WDS.sampleResult.sampleStart();
 WDS.log.info(&quot;Test started&quot;);
 
 // Load the page
-WDS.browser.get(&quot;https://www.training-support.net/selenium/login-form&quot;);
+WDS.browser.get(&quot;https://v1.training-support.net/selenium/login-form&quot;);
 WDS.log.info(&quot;Test page opened&quot;);
 
 // Credentials
@@ -68,7 +68,7 @@ WDS.browser.findElement(By.id(&quot;username&quot;)).sendKeys(username);
 WDS.browser.findElement(By.id(&quot;password&quot;)).sendKeys(password);
 
 // Find Login button and click it
-WDS.browser.findElement(By.xpath(&quot;//button[text()=&apos;Log in&apos;]&quot;)).click();
+WDS.browser.findElement(By.xpath(&quot;//button[@class=&apos;svelte-1pdjkmx&apos;]&quot;).click();
 WDS.log.info(&quot;Logged in&quot;);
 
 // Find confirmation message and print it to log

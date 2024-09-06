@@ -1,0 +1,10 @@
+services:
+    redis-server:
+        image: 'redis'
+        volumes:
+             - ./redis:/data
+    command: ["redis-server", "--save", "1 1"]
+    node-app:
+        build: .
+        ports:
+            - "8081:8081"

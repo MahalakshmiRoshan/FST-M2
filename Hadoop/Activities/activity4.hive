@@ -17,4 +17,3 @@ ORDER BY wordCount DESC;
 
 --View result from word_counts
 Select * from word_counts;
-
